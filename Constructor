@@ -1,0 +1,84 @@
+1--------Default Constructor
+
+using System;
+class hel {
+    
+    int i;
+    
+    hel(){
+        Console.WriteLine("default constructor");
+        Console.WriteLine(i);
+    }
+    
+    
+  static void Main() {
+   hel h=new hel();
+  }
+}
+
+==============================================================
+
+
+2-parameterized constructor
+
+using System;
+class hel {
+hel(int i,int j){ 
+        Console.WriteLine(i + j);
+    }
+
+  static void Main() {
+   hel h=new hel(10,20);
+  }
+}
+
+
+----------------------------------------------------------------
+
+using System;
+class hel {
+    
+     hel(){
+         Console.WriteLine("default constructor");
+     }
+    
+    hel(int i,int j){
+       
+        Console.WriteLine(i + j);
+    }
+    
+    
+  static void Main() {
+      hel h1=new hel();
+   hel h=new hel(10,20);
+  }
+}
+
+o/p-  10  defaul constructor
+
+
+========================================================
+
+Destructor
+
+
+using System;
+class hel {
+    
+     hel(){
+         Console.WriteLine("default constructor");
+     }
+    
+    ~hel(){
+         Console.WriteLine("Destructor");
+    }
+    
+    
+  static void Main() {
+      hel h1=new hel();
+  
+  }
+}
+
+o/p-  default constructor
+       Destructor
