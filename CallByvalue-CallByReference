@@ -1,0 +1,45 @@
+Call By value :--------------------
+
+using System;
+class HelloWorld {
+    public void callbyvalue(int a){
+        a=a+10;
+        Console.WriteLine(a);
+    }
+  static void Main() {
+      int b=10;
+      HelloWorld hw=new HelloWorld();
+        Console.WriteLine(b);
+      hw.callbyvalue(b);
+    Console.WriteLine(b);
+  }
+}
+
+
+o/p-   10
+       20
+       10
+
+------------------------------------------------
+
+Call By refernce :0---------
+
+using System;
+class HelloWorld {
+    public void callbyvalue(ref int a){
+        a=a+10;
+        Console.WriteLine(a);
+    }
+  static void Main() {
+      int b=10;
+      HelloWorld hw=new HelloWorld();
+        Console.WriteLine(b);
+      hw.callbyvalue(ref b);
+    Console.WriteLine(b);
+  }
+}
+
+
+o/p-  10
+      20
+      20
