@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+  static void Main() {
+      int i=2;
+     if(i==2){
+         goto i1;
+     }
+     else {
+         Console.WriteLine(i);
+     }
+     i1:
+     Console.WriteLine("wrong");
+  }
+}
