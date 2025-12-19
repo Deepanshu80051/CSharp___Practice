@@ -1,0 +1,19 @@
+using System;
+class HelloWorld {
+    public void callbyvalue(out int b){
+        b=5;
+        b=b+10;
+      
+       
+    }
+  static void Main() {
+      int b=10;
+      HelloWorld hw=new HelloWorld();
+        Console.WriteLine(b);
+      hw.callbyvalue(out b);
+    Console.WriteLine(b);
+  }
+}
+
+
+0/p-- 10 15
