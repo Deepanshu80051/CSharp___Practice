@@ -1,0 +1,47 @@
+without Static  :--
+
+
+using System;
+class hel {
+    
+    int count=0;
+     void add(){
+         count++;
+         Console.WriteLine(count);
+     }
+    
+    
+  static void Main() {
+      hel h1=new hel();
+       hel h2=new hel();
+       h1.add();
+       h2.add();
+  
+  }
+}
+o/p=  1  1
+
+======================================================
+
+static :---
+
+using System;
+class hel {
+    
+    static int count=0;
+     void add(){
+         count++;
+         Console.WriteLine(count);
+     }
+    
+    
+  static void Main() {
+      hel h1=new hel();
+       hel h2=new hel();
+       h1.add();
+       h2.add();
+  
+  }
+}
+
+o/p- 1 2
