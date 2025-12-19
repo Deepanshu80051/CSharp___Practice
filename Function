@@ -1,0 +1,40 @@
+Without parameter:--------
+
+using System;
+class HelloWorld {
+    public void m1(){
+        Console.WriteLine("without parameter");
+    }
+  static void Main() {
+      HelloWorld hw=new HelloWorld();
+      hw.m1();
+  }
+}
+------------------------------------------------
+Parameter:--------------
+
+class HelloWorld {
+    public void m1(int a,int b){
+        int result=a+b;
+        Console.WriteLine(result);
+    }
+  static void Main() {
+      HelloWorld hw=new HelloWorld();
+      hw.m1(10,20);
+  }
+}
+
+-----------------------------------------
+with  Return
+using System;
+class HelloWorld {
+    public int m1(int a,int b){
+        int result=a+b;
+        return result;
+    }
+  static void Main() {
+      HelloWorld hw=new HelloWorld();
+     int ans= hw.m1(10,20);
+     Console.WriteLine(ans);
+  }
+}
