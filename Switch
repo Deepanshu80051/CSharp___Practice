@@ -1,0 +1,43 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+
+public class practice{
+    
+    public static void Main(String[] args){
+        Console.WriteLine("Enter number");
+        int a=int.Parse(Console.ReadLine());
+         Console.WriteLine("Enter number");
+        int b=int.Parse(Console.ReadLine());
+         Console.WriteLine("Enter perform 1->+ 2->- 3->* 4->%");
+        int o=int.Parse(Console.ReadLine());
+        switch(o){
+            
+            case 1:
+            Console.WriteLine(a+b);
+            break;
+            case 2:
+            Console.WriteLine(a-b);
+             break;
+            case 3:
+            Console.WriteLine(a*b);
+             break;
+            case 4:
+            Console.WriteLine(a%b);
+             break;
+            default:
+            Console.WriteLine("error");
+             break;
+            
+            
+        }
+       
+    }
+    
+}
