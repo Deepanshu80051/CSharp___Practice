@@ -1,0 +1,60 @@
+For Loop========
+
+using System;
+
+public class practice{
+    
+    public static void Main(String[] args){
+        for(int i=0;i<=20;i=i+2){
+            Console.WriteLine(i);
+        }
+    }
+    
+}
+
+-------------------------------------
+Nested Loop  :----------
+
+using System;
+
+public class practice{
+    
+    public static void Main(String[] args){
+        for(int i=0;i<=20;i=i+2){
+            
+            for(int j=0;j<=20;j++){
+                Console.WriteLine(i +j);
+            }
+            
+        }
+    }
+    
+}
+--------------------------------------------------
+
+while :---------
+using System;
+class HelloWorld {
+  static void Main() {
+      int i=1;
+    while(i<=20){
+        Console.WriteLine(i);
+        i=i+2;
+    }
+  }
+}
+
+--------------------------------------
+
+do-while
+
+using System;
+class HelloWorld {
+  static void Main() {
+      int i=2;
+      do{
+         Console.WriteLine(i);
+         i=i+2;
+      } while(i<=20);
+  }
+}
