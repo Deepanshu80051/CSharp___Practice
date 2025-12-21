@@ -1,0 +1,97 @@
+
+using System;
+
+
+class HelloWorld {
+
+  static void Main() {
+      int a=10;
+      int b=Convert.ToInt32(Console.ReadLine());
+      int c=a/b;
+      Console.WriteLine(c);
+  }
+}
+
+
+i/p-3.4
+error
+
+========================================
+
+using System;
+
+
+class HelloWorld {
+
+  static void Main() {
+      int a=10;
+      int b=Convert.ToInt32(Console.ReadLine());
+      int c=0;   // yeh initialze karna jaruri hai
+      try{
+        c=a/b;  
+      }
+      catch(Exception e){
+          Console.WriteLine(e);
+      }
+      Console.WriteLine(c);
+  }
+}
+
+i/p---0
+
+=======================
+finally
+
+using System;
+
+
+class HelloWorld {
+
+  static void Main() {
+      int a=10;
+      int b=Convert.ToInt32(Console.ReadLine());
+      int c=0;   // yeh initialze karna jaruri hai
+      try{
+        c=a/b;  
+      }
+      catch(Exception e){
+          Console.WriteLine(e);
+      }
+     finally{
+      Console.WriteLine("always execute");
+  
+      Console.WriteLine(c);
+  }
+}
+
+====================================================
+throw and user defined 
+
+using System;
+
+class notvalidage : Exception{
+    
+    public notvalidage(string s) : base(s){
+        
+    }
+}
+
+class HelloWorld {
+
+  static void checkage(int i){
+      if(i<18){
+          throw new notvalidage("age is invalid");
+      }
+  }
+
+  static void Main() {
+     
+      try{
+        checkage(16);  
+      }
+      catch(Exception e){
+          Console.WriteLine(e);
+      }
+     
+  }
+}
