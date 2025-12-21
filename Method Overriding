@@ -1,0 +1,244 @@
+using System;
+
+public class a{
+    
+    public void call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+}
+
+o/p----- base class
+--------------------------------------------------
+
+
+using System;
+
+public class a{
+    
+    public void call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      b a1=new b();
+      a1.call();
+  }
+}
+
+o/p- derived class
+
+=================================================================
+
+virtual keyword
+
+
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+}
+
+===========================================================
+virtual and override
+
+
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public override void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+}
+======================================================
+virtal keyword - possibility
+
+
+1-----------
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public  void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new a();
+      a1.call();
+  }
+}    
+
+o/p-- base class
+
+2------------
+
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public  void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+}    
+
+o/p-- base class
+
+3----------------
+
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public  void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      b a1=new b();
+      a1.call();
+  }
+}    
+
+o/p-- Derived class
+=====================================================================
+
+both used override and virtual
+
+1----------
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public override void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new a();
+      a1.call();
+  }
+}
+o/p- base class
+
+2--------------
+
+using System;
+
+public class a{
+    
+    public virtual void  call(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public override void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+}
+
+o/p-- derived class
