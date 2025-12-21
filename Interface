@@ -1,0 +1,55 @@
+using System;
+
+public interface a{
+    
+   void  call();
+   
+}
+
+public class b:a{
+     public  void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+}
+
+
+===============================================================
+
+Multilevel interface
+
+using System;
+
+public interface a{
+    
+   void  call();
+   
+}
+public interface a1{
+    
+    void call();
+}
+
+public class b:a , a1{
+     public  void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      a a1=new b();
+      a1.call();
+  }
+
+==================================
+
+agar yahi class k through banaye to error aaye ga isliye interface use kare ge
