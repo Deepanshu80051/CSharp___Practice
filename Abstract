@@ -1,0 +1,26 @@
+using System;
+
+public abstract class a{
+    
+    public abstract void  call();
+    public  void  calsl(){
+        Console.WriteLine("base class");
+    }
+}
+
+public class b:a{
+     public override void call(){
+        Console.WriteLine("Derived class");
+    }
+}
+
+class HelloWorld {
+
+  static void Main() {
+      b a1=new b();
+      a1.call();
+  }
+}
+
+
+*-> a ka object create nhi hoga
