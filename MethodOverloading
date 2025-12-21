@@ -1,0 +1,19 @@
+using System;
+class HelloWorld {
+   public void call(){
+       Console.WriteLine("without argumnet");
+    }
+     public void call(int a,int b){
+       Console.WriteLine(a+b);
+    }
+     public void call(int a,float b){
+       Console.WriteLine(a+b);
+    }
+    
+  static void Main() {
+      HelloWorld h=new HelloWorld();
+      h.call();
+      h.call(10,20);
+      h.call(10,.555f);
+  }
+}
